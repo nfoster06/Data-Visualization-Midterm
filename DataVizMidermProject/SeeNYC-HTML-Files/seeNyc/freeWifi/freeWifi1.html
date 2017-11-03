@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Public Wifi Proviers in NYC</title>
+  <title></title>
+  <link rel="stylesheet" href="">
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script>
+    google.charts.load('current', {
+      packages: ['corechart', 'bar']
+    });
+    google.charts.setOnLoadCallback(drawAnnotations);
+
+    function drawAnnotations() {
+      var data = google.visualization.arrayToDataTable([
+        ['Provider', 'Locations', {
+          type: 'string',
+          role: 'annotation'
+        }, ],
+        ['ALTICEUSA', 237, '237'],
+        ['AT&T', 27, '27'],
+        ['BPL', 59, '59'],
+        ['Chelsea', 30, '30'],
+        ['City Tech', 11, '11'],
+        ['Downtown Brooklyn', 100, '100'],
+        ['Harlem', 128, '128'],
+        ['LinkNYC - Citybridge', 1134, '1134'],
+        ['Manhattan Downtown Alliance', 36, '36'],
+        ['NYCHA', 28, '28'],
+        ['Partner', 2, '2'],
+        ['QPL', 65, '65'],
+        ['SPECTRUM', 343, '343'],
+        ['Transit Wireless', 276, '276'],
+
+      ]);
+
+      //       Provider,Locations (from.csv file)
+      //       ALTICEUSA,237
+      //       AT&T,27
+      //       BPL,59
+      //       Chelsea,30
+      //       City Tech,11
+      //       Downtown Brooklyn,100
+      //       Harlem,128
+      //       LinkNYC - Citybridge,1134
+      //       Manhattan Down Alliance,36
+      //       NYCHA,28
+      //       NYPL,90
+      //       Partner,2
+      //       QPL,65
+      //       SPECTRUM,343
+      //       Transit Wireless,276
+
+      var options = {
+        title: 'Number of Public Wifi Locations by provider',
+        chartArea: {
+          width: '50%'
+        },
+        annotations: {
+          alwaysOutside: true,
+          textStyle: {
+            fontSize: 12,
+            auraColor: 'none',
+            color: '#555'
+          },
+          boxStyle: {
+            stroke: '#ccc',
+            strokeWidth: 1,
+            gradient: {
+              color1: '#f3e5f5',
+              color2: '#f3e5f5',
+              x1: '0%',
+              y1: '0%',
+              x2: '100%',
+              y2: '100%'
+            }
+          }
+        },
+        hAxis: {
+          title: 'Total Locations',
+          minValue: 0,
+        },
+        vAxis: {
+          title: 'Provider'
+        }
+      };
+      var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+  </script>
+
+</head>
+
+<body>
+  <div id="chart_div" style="width: 100%; height: 500px;"></div>
+
+
+
+
+
+
+</body>
+</body>
+
+</html>

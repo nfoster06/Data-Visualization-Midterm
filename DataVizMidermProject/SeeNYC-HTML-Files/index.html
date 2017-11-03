@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>SeeNYC!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+
+    .row.content {
+      height: 450px
+    }
+
+    /* Set gray background color and 100% height */
+
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Empire_State_Building_%28HDR%29.jpg/150px-Empire_State_Building_%28HDR%29.jpg">NYC!</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="seeNyc/schoolSafety/schoolSafety1.html">NYC Map</a></li>
+          <li><a href="https://www.linkedin.com/in/nelson-foster-67b22a17/">Contact Me!</a></li>
+
+        </ul>
+        <!--<ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>-->
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid text-center">
+    <div class="row content">
+      <div class="col-sm-2 sidenav">
+        <p><a href="seeNyc/freeWifi/freeWifi1.html">Free Public Wifi Locations</a></p>
+        <p><a href="seeNyc/legallyOwnedBusinesses/legallyOwnedBusinesses1.html">Legally Owned Businesses</a></p>
+        <p><a href="seeNyc/nycJobs/nycJobs1.html">Civil Service Job Listings</a></p>
+        <p><a href="seeNyc/schoolSafety/schoolSafety2.html">School Safety by Zip Code</a></p>
+        <p><a href="seeNyc/schoolSafety/schoolSafety3.html">School Safety by Borough</a></p>
+        <p><a href="seeNyc/timesSquareVenues/timesSquareVenues1.html">Entertainment Venues in Times Square</a></p>
+
+
+      </div>
+      <div class="col-sm-8 text-left">
+        <h1>SeeNYC!</h1>
+        <h2>An Interactive Visual Guide to New York City</h2>
+
+        <h3>Interactive Dashboards</h3>
+        <iframe src="https://public.tableau.com/views/SeeNYCInteractiveDashboard/TimesSquareEntertainmentDashboard?:embed=y&:display_count=yes" width="1045" height="1355"></iframe>
+      </div>
+      <!--<div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+    </div> -->
+    </div>
+  </div>
+
+  <footer class="container-fluid text-center">
+    <p><a href="https://opendata.cityofnewyork.us/" target=blank>Datasets Courtesy of NYC Open Data</a></p>
+    <p><a href="https://public.tableau.com/profile/nelson.foster#!/" target=blank>Follow me on Tableau Public</a></p>
+    <p><a href="https://github.com/nfoster06" target=blank>Follow me on Github</a></p>
+
+  </footer>
+
+</body>
+
+</html>

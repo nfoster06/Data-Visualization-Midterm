@@ -1,0 +1,96 @@
+	<!DOCTYPE html>
+	<html lang="en">
+
+	<head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	  <title>School Safety</title>
+	</head>
+
+	<body>
+	  <body>
+	<script src="http://d3js.org/d3.v3.min.js"></script>
+
+	<script>
+	var diameter = 1500, //max size of the bubbles
+	    color    = d3.scale.category20b(); //color category
+
+	var bubble = d3.layout.pack()
+	    .sort(null)
+	    .size([diameter, diameter])
+	    .padding(1.5);
+
+	var svg = d3.select("body")
+	    .append("svg")
+	    .attr("width", diameter)
+	    .attr("height", diameter)
+	    .attr("class", "bubble");
+
+	var tooltip = d3.select("body")
+	        .append("div")
+	        .style("position", "absolute")
+	        .style("z-index", "10")
+	        .style("visibility", "hidden")
+	        .style("color", "white")
+	        .style("padding", "8px")
+	        .style("background-color", "rgba(0, 0, 0, 0.75)")
+	        .style("border-radius", "6px")
+	        .style("font", "12px sans-serif")
+	        .text("tooltip");
+
+
+
+	d3.csv("safety.csv", function(error, data){
+
+	    //convert numerical values from strings to numbers
+	    data = data.map(function(d){ d.value = +d["total"]; return d; });
+
+	    //bubbles needs very specific format, convert data to this.
+	    var nodes = bubble.nodes({children:data}).filter(
+	        function(d) {
+	            console.log('children ', d.children);
+	            return !d.children; });
+	    console.log('nodes ', nodes);
+	    //setup the chart
+	    var bubbles = svg.append("g")
+	        .attr("transform", "translate(0,0)")
+	        .selectAll(".bubble")
+	        .data(nodes)
+	        .enter();
+
+
+
+
+	    //create the bubbles
+	    bubbles.append("circle")
+	        .attr("r", function(d){ return d.r; })
+	        .attr("cx", function(d){ return d.x; })
+	        .attr("cy", function(d){ return d.y; })
+	        .style("fill", function(d) { return color(d.value); });
+
+	    //format the text for each bubble
+	    bubbles.append("text")
+	        .attr("x", function(d){ return d.x; })
+	        .attr("y", function(d){ return d.y + 5; })
+	        .attr("text-anchor", "middle")
+	        .text(function(d){ return d["Postcode"]; })
+	        .style({
+	            "fill":"white",
+	            "font-family":"Helvetica Neue, Helvetica, Arial, san-serif",
+	            "font-size": "12px"
+
+	        });
+	})
+
+	</script>
+
+
+	</body>
+
+	</html>
+
+
+</body>
+
+</html>

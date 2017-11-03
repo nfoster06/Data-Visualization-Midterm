@@ -1,0 +1,2020 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10300.17.1003.0840                               -->
+<workbook original-version='10.3' source-build='10.3.4 (10300.17.1003.0840)' source-platform='mac' version='10.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='NYC_Free_Public_WiFi_03292017' inline='true' name='federated.1agp3gk025p1ei1bqvp6s1b1m0qn' version='10.3'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='NYC_Free_Public_WiFi_03292017' name='textscan.0rtqh5t19uki7g1gub8xn1rd18g0'>
+            <connection class='textscan' directory='/Users/nfoster06/Desktop/Data Visualization Miderm Project/Original_Files' filename='NYC_Free_Public_WiFi_03292017.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0rtqh5t19uki7g1gub8xn1rd18g0' name='NYC_Free_Public_WiFi_03292017.csv' table='[NYC_Free_Public_WiFi_03292017#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='OBJECTID' ordinal='0' />
+            <column datatype='string' name='the_geom' ordinal='1' />
+            <column datatype='string' name='BORO' ordinal='2' />
+            <column datatype='string' name='TYPE' ordinal='3' />
+            <column datatype='string' name='PROVIDER' ordinal='4' />
+            <column datatype='string' name='NAME' ordinal='5' />
+            <column datatype='string' name='LOCATION' ordinal='6' />
+            <column datatype='real' name='LAT' ordinal='7' />
+            <column datatype='real' name='LON' ordinal='8' />
+            <column datatype='real' name='X' ordinal='9' />
+            <column datatype='real' name='Y' ordinal='10' />
+            <column datatype='string' name='LOCATION_T' ordinal='11' />
+            <column datatype='string' name='REMARKS' ordinal='12' />
+            <column datatype='string' name='CITY' ordinal='13' />
+            <column datatype='string' name='SSID' ordinal='14' />
+            <column datatype='string' name='SOURCEID' ordinal='15' />
+            <column datatype='datetime' date-parse-format='MM/dd/yyyy hh:mm:ss a Z' name='ACTIVATED' ordinal='16' />
+            <column datatype='integer' name='BOROCODE' ordinal='17' />
+            <column datatype='string' name='BORONAME' ordinal='18' />
+            <column datatype='string' name='NTACODE' ordinal='19' />
+            <column datatype='string' name='NTANAME' ordinal='20' />
+            <column datatype='integer' name='COUNDIST' ordinal='21' />
+            <column datatype='integer' name='POSTCODE' ordinal='22' />
+            <column datatype='integer' name='BOROCD' ordinal='23' />
+            <column datatype='integer' name='CT2010' ordinal='24' />
+            <column datatype='integer' name='BOROCT2010' ordinal='25' />
+            <column datatype='integer' name='BIN' ordinal='26' />
+            <column datatype='integer' name='BBL' ordinal='27' />
+            <column datatype='integer' name='DOITT_ID' ordinal='28' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OBJECTID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OBJECTID]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>OBJECTID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>the_geom</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[the_geom]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>the_geom</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BORO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BORO]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>BORO</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TYPE]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>TYPE</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PROVIDER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PROVIDER]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>PROVIDER</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>NAME</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LOCATION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LOCATION]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>LOCATION</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LAT</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LAT]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>LAT</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LON</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LON]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>LON</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>X</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[X]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>X</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Y</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Y]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>Y</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LOCATION_T</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LOCATION_T]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>LOCATION_T</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REMARKS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[REMARKS]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>REMARKS</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CITY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CITY]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>CITY</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SSID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SSID]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>SSID</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SOURCEID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SOURCEID]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>SOURCEID</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ACTIVATED</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[ACTIVATED]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>ACTIVATED</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BOROCODE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BOROCODE]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>BOROCODE</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BORONAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BORONAME]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>BORONAME</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NTACODE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NTACODE]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>NTACODE</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NTANAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NTANAME]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>NTANAME</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COUNDIST</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[COUNDIST]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>COUNDIST</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>POSTCODE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[POSTCODE]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>POSTCODE</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BOROCD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BOROCD]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>BOROCD</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CT2010</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CT2010]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>CT2010</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BOROCT2010</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BOROCT2010]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>BOROCT2010</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BIN</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BIN]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>BIN</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BBL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BBL]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>BBL</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DOITT_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DOITT_ID]</local-name>
+            <parent-name>[NYC_Free_Public_WiFi_03292017.csv]</parent-name>
+            <remote-alias>DOITT_ID</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Activated' datatype='datetime' name='[ACTIVATED]' role='dimension' type='ordinal' />
+      <column caption='Borocd' datatype='integer' name='[BOROCD]' role='measure' type='quantitative' />
+      <column caption='Borocode' datatype='integer' name='[BOROCODE]' role='measure' type='quantitative' />
+      <column caption='Boroct2010' datatype='integer' name='[BOROCT2010]' role='measure' type='quantitative' />
+      <column caption='Boroname' datatype='string' name='[BORONAME]' role='dimension' type='nominal' />
+      <column caption='Boro' datatype='string' name='[BORO]' role='dimension' type='nominal' />
+      <column caption='City' datatype='string' name='[CITY]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Coundist' datatype='integer' name='[COUNDIST]' role='measure' type='quantitative' />
+      <column caption='Ct2010' datatype='integer' name='[CT2010]' role='measure' type='quantitative' />
+      <column caption='Doitt Id' datatype='integer' name='[DOITT_ID]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' datatype='real' name='[LAT]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Location' datatype='string' name='[LOCATION]' role='dimension' type='nominal' />
+      <column caption='Location T' datatype='string' name='[LOCATION_T]' role='dimension' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[LON]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Name' datatype='string' name='[NAME]' role='dimension' type='nominal' />
+      <column caption='Ntacode' datatype='string' name='[NTACODE]' role='dimension' type='nominal' />
+      <column caption='Ntaname' datatype='string' name='[NTANAME]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Objectid' datatype='integer' name='[OBJECTID]' role='measure' type='quantitative' />
+      <column caption='Postcode' datatype='integer' default-format='*00000' name='[POSTCODE]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='Provider' datatype='string' name='[PROVIDER]' role='dimension' type='nominal' />
+      <column caption='Remarks' datatype='string' name='[REMARKS]' role='dimension' type='nominal' />
+      <column caption='Sourceid' datatype='string' name='[SOURCEID]' role='dimension' type='nominal' />
+      <column caption='Ssid' datatype='string' name='[SSID]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[TYPE]' role='dimension' type='nominal' />
+      <column caption='The Geom' datatype='string' name='[the_geom]' role='dimension' type='nominal' />
+      <column-instance column='[PROVIDER]' derivation='None' name='[none:PROVIDER:nk]' pivot='key' type='nominal' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection class='dataengine' dbname='/Users/nfoster06/Documents/My Tableau Repository/Datasources/NYC_Free_Public_WiFi_03292017.tde' schema='Extract' tablename='Extract' update-time='10/28/2017 06:46:25 PM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <calculations>
+            <calculation column='[Number of Records]' formula='1' />
+          </calculations>
+          <refresh>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='2566' timestamp-start='2017-10-28 18:46:25.571' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>ACTIVATED</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[ACTIVATED]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ACTIVATED</remote-alias>
+              <ordinal>0</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>221</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='datetime'>#1899-11-30 00:00:00#</statistic>
+                <statistic aggregation='Max' datatype='datetime'>#2017-08-01 00:00:00#</statistic>
+                <statistic aggregation='Count' datatype='integer'>2566</statistic>
+                <statistic aggregation='Median' datatype='datetime'>#1899-11-30 00:00:00#</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;datetime&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BBL</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[BBL]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BBL</remote-alias>
+              <ordinal>1</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1457</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>4299493049845.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>1675562373.2833204</statistic>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>5078990009</statistic>
+                <statistic aggregation='Stdev' datatype='real'>1486521284.522599</statistic>
+                <statistic aggregation='StdevP' datatype='real'>1486231598.9923182</statistic>
+                <statistic aggregation='Var' datatype='real'>2.209745529338718e+18</statistic>
+                <statistic aggregation='VarP' datatype='real'>2.2088843658432625e+18</statistic>
+                <statistic aggregation='Count' datatype='integer'>2566</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>1.287206606126724e+22</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BIN</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[BIN]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BIN</remote-alias>
+              <ordinal>2</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1374</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>3667940845.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>1429439.1445830085</statistic>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>5162377</statistic>
+                <statistic aggregation='Stdev' datatype='real'>1503086.8879787223</statistic>
+                <statistic aggregation='StdevP' datatype='real'>1502793.9742298671</statistic>
+                <statistic aggregation='Var' datatype='real'>2259270192813.5601</statistic>
+                <statistic aggregation='VarP' datatype='real'>2258389728981.5986</statistic>
+                <statistic aggregation='Count' datatype='integer'>2566</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>11038126268424660.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BOROCD</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[BOROCD]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BOROCD</remote-alias>
+              <ordinal>3</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>67</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>583538.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>227.41153546375682</statistic>
+                <statistic aggregation='Min' datatype='integer'>101</statistic>
+                <statistic aggregation='Max' datatype='integer'>595</statistic>
+                <statistic aggregation='Stdev' datatype='real'>129.7494202453934</statistic>
+                <statistic aggregation='StdevP' datatype='real'>129.72413535374818</statistic>
+                <statistic aggregation='Var' datatype='real'>16834.912054015702</statistic>
+                <statistic aggregation='VarP' datatype='real'>16828.351293277581</statistic>
+                <statistic aggregation='Count' datatype='integer'>2566</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>175884822.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BOROCODE</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[BOROCODE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BOROCODE</remote-alias>
+              <ordinal>4</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>5637.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>2.1968043647700704</statistic>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>5</statistic>
+                <statistic aggregation='Stdev' datatype='real'>1.2823002290810874</statistic>
+                <statistic aggregation='StdevP' datatype='real'>1.2820503410870785</statistic>
+                <statistic aggregation='Var' datatype='real'>1.6442938775014091</statistic>
+                <statistic aggregation='VarP' datatype='real'>1.6436530770814943</statistic>
+                <statistic aggregation='Count' datatype='integer'>2566</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>16601.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>17</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BOROCT2010</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[BOROCT2010]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BOROCT2010</remote-alias>
+              <ordinal>5</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>683</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>5697314482.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>2220309.6188620422</statistic>
+                <statistic aggregation='Min' datatype='integer'>1000500</statistic>
+                <statistic aggregation='Max' datatype='integer'>5027302</statistic>
+                <statistic aggregation='Stdev' datatype='real'>1292783.1679438399</statistic>
+                <statistic aggregation='StdevP' datatype='real'>1292531.2370892712</statistic>
+                <statistic aggregation='Var' datatype='real'>1671288319318.9104</statistic>
+                <statistic aggregation='VarP' datatype='real'>1670636998851.5217</statistic>
+                <statistic aggregation='Count' datatype='integer'>2566</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>16936656685119616.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BORONAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[BORONAME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BORONAME</remote-alias>
+              <ordinal>6</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Bronx&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Staten Island&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>2566</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BORO</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[BORO]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BORO</remote-alias>
+              <ordinal>7</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;BK&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;SI&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>2566</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>3</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CITY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CITY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CITY</remote-alias>
+              <ordinal>8</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>44</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Arverne&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Woodside&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>2566</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>7</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>COUNDIST</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[COUNDIST]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>COUNDIST</remote-alias>
+              <ordinal>9</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>51</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>47470.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>18.499610288386595</statistic>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>51</statistic>
+                <statistic aggregation='Stdev' datatype='real'>15.180390290132076</statistic>
+                <statistic aggregation='StdevP' datatype='real'>15.177432014689366</statistic>
+                <statistic aggregation='Var' datatype='real'>230.44424936073622</statistic>
+                <statistic aggregation='VarP' datatype='real'>230.3544425605177</statistic>
+                <statistic aggregation='Count' datatype='integer'>2566</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>1469266.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CT2010</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[CT2010]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CT2010</remote-alias>
+              <ordinal>10</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>526</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>11411749.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>4447.2911145752141</statistic>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>157902</statistic>
+                <statistic aggregation='Stdev' datatype='real'>16039.148146206519</statistic>
+                <statistic aggregation='StdevP' datatype='real'>16036.022520502826</statistic>
+                <statistic aggregation='Var' datatype='real'>257254273.25596002</statistic>
+                <statistic aggregation='VarP' datatype='real'>257154018.27807382</statistic>
+                <statistic aggregation='Count' datatype='integer'>2566</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>710608580831.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DOITT_ID</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[DOITT_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DOITT_ID</remote-alias>
+              <ordinal>11</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2566</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>3293461.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>1283.5</statistic>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>2566</statistic>
+                <statistic aggregation='Stdev' datatype='real'>740.88471887782021</statistic>
+                <statistic aggregation='StdevP' datatype='real'>740.74033912026152</statistic>
+                <statistic aggregation='Var' datatype='real'>548910.16666666663</statistic>
+                <statistic aggregation='VarP' datatype='real'>548696.25</statistic>
+                <statistic aggregation='Count' datatype='integer'>2566</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>5635111771.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>16</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LAT</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[LAT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LAT</remote-alias>
+              <ordinal>12</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2395</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>104534.72382019351</statistic>
+                <statistic aggregation='Avg' datatype='real'>40.738395876926546</statistic>
+                <statistic aggregation='Min' datatype='real'>40.509531123899997</statistic>
+                <statistic aggregation='Max' datatype='real'>40.9037227771</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.070844915465151662</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.070831109576788065</statistic>
+                <statistic aggregation='Var' datatype='real'>0.0050190020472644856</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.0050170460838789574</statistic>
+                <statistic aggregation='Count' datatype='integer'>2566</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>4258589.8356124777</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LOCATION</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[LOCATION]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LOCATION</remote-alias>
+              <ordinal>13</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2276</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;(PICNIC AREA) INSIDE PARK EAST SIDE OF INDIAN LAKE&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;York St (F)&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>2562</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>14</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LOCATION_T</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[LOCATION_T]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LOCATION_T</remote-alias>
+              <ordinal>14</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Indoor&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Subway Station&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>2566</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LON</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[LON]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LON</remote-alias>
+              <ordinal>15</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2378</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>-189749.4504299252</statistic>
+                <statistic aggregation='Avg' datatype='real'>-73.947564469963055</statistic>
+                <statistic aggregation='Min' datatype='real'>-74.244106708299995</statistic>
+                <statistic aggregation='Max' datatype='real'>-73.714837757200002</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.06714996889585069</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.067136883059441571</statistic>
+                <statistic aggregation='Var' datatype='real'>0.0045091183227137155</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.0045073610669371317</statistic>
+                <statistic aggregation='Count' datatype='integer'>2566</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>14031521.284695452</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NAME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NAME</remote-alias>
+              <ordinal>16</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1763</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;0&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Yorkville&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>2308</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>13</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NTACODE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NTACODE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NTACODE</remote-alias>
+              <ordinal>17</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>178</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;BK09&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;SI54&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>2566</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>9</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NTANAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NTANAME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NTANAME</remote-alias>
+              <ordinal>18</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>178</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Annadale-Huguenot-Prince&apos;s Bay-Eltingville&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Yorkville&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>2566</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>10</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Records</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[Number of Records]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Records</remote-alias>
+              <ordinal>19</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>2566.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>1.0</statistic>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>1</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.0</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.0</statistic>
+                <statistic aggregation='Var' datatype='real'>0.0</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>2566</statistic>
+                <statistic aggregation='Median' datatype='integer'>1</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>2566.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OBJECTID</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[OBJECTID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OBJECTID</remote-alias>
+              <ordinal>20</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2566</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>3293461.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>1283.5</statistic>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>2566</statistic>
+                <statistic aggregation='Stdev' datatype='real'>740.88471887782021</statistic>
+                <statistic aggregation='StdevP' datatype='real'>740.74033912026152</statistic>
+                <statistic aggregation='Var' datatype='real'>548910.16666666663</statistic>
+                <statistic aggregation='VarP' datatype='real'>548696.25</statistic>
+                <statistic aggregation='Count' datatype='integer'>2566</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>5635111771.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>POSTCODE</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[POSTCODE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>POSTCODE</remote-alias>
+              <ordinal>21</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>176</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>27018285.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>10529.339438815277</statistic>
+                <statistic aggregation='Min' datatype='integer'>83</statistic>
+                <statistic aggregation='Max' datatype='integer'>11694</statistic>
+                <statistic aggregation='Stdev' datatype='real'>903.8127968091303</statistic>
+                <statistic aggregation='StdevP' datatype='real'>903.63666647581829</statistic>
+                <statistic aggregation='Var' datatype='real'>816877.57167594228</statistic>
+                <statistic aggregation='VarP' datatype='real'>816559.22499952919</statistic>
+                <statistic aggregation='Count' datatype='integer'>2566</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>286579984791.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>8</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PROVIDER</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PROVIDER]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PROVIDER</remote-alias>
+              <ordinal>22</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;ALTICEUSA&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Transit Wireless&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>2566</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>6</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>REMARKS</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[REMARKS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>REMARKS</remote-alias>
+              <ordinal>23</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>280</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;3 free 10 min sessions&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Temporary Closing&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>1995</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>11</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SOURCEID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SOURCEID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SOURCEID</remote-alias>
+              <ordinal>24</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1136</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;0&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;LINK-021686&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>1477</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>12</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SSID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SSID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SSID</remote-alias>
+              <ordinal>25</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;\#DwtwnAllianceFreeWiFi&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;unionsquarewifi&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>2566</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>5</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TYPE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[TYPE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TYPE</remote-alias>
+              <ordinal>26</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Free&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Partner Site&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>2566</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>X</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[X]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>X</remote-alias>
+              <ordinal>27</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2407</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>2562859766.5520964</statistic>
+                <statistic aggregation='Avg' datatype='real'>998776.21455654572</statistic>
+                <statistic aggregation='Min' datatype='real'>916370.60129799997</statistic>
+                <statistic aggregation='Max' datatype='real'>1063266.3330999999</statistic>
+                <statistic aggregation='Stdev' datatype='real'>18619.042616963696</statistic>
+                <statistic aggregation='StdevP' datatype='real'>18615.414234854419</statistic>
+                <statistic aggregation='Var' datatype='real'>346668747.97231025</statistic>
+                <statistic aggregation='VarP' datatype='real'>346533647.13522053</statistic>
+                <statistic aggregation='Count' datatype='integer'>2566</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>2560612581414724.5</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Y</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Y]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Y</remote-alias>
+              <ordinal>28</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2406</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>534512533.08410525</statistic>
+                <statistic aggregation='Avg' datatype='real'>208305.74165397711</statistic>
+                <statistic aggregation='Min' datatype='real'>125007.163094</statistic>
+                <statistic aggregation='Max' datatype='real'>268543.64701700001</statistic>
+                <statistic aggregation='Stdev' datatype='real'>25808.610792939195</statistic>
+                <statistic aggregation='StdevP' datatype='real'>25803.581345206956</statistic>
+                <statistic aggregation='Var' datatype='real'>666084391.06141758</statistic>
+                <statistic aggregation='VarP' datatype='real'>665824810.23871243</statistic>
+                <statistic aggregation='Count' datatype='integer'>2566</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>113050536090503.05</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>the_geom</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[the_geom]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>the_geom</remote-alias>
+              <ordinal>29</ordinal>
+              <family>NYC_Free_Public_WiFi_03292017.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2407</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;POINT (-73.71483775719267 40.745150518217976)&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;POINT (-74.24410670826178 40.509531123859375)&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>2566</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>15</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.556' measure-ordering='alphabetic' measure-percentage='0.444' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:PROVIDER:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Manhattan Down Alliance&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;ALTICEUSA&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;City Tech&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;QPL&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;NYCHA&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Downtown Brooklyn&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;AT&amp;T&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Harlem&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;SPECTRUM&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Transit Wireless&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;NYPL&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;LinkNYC - Citybridge&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BPL&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Partner&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Chelsea&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Public WiFi Service Providers by Location Type'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='NYC_Free_Public_WiFi_03292017' name='federated.1agp3gk025p1ei1bqvp6s1b1m0qn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1agp3gk025p1ei1bqvp6s1b1m0qn'>
+            <column caption='Boroname' datatype='string' name='[BORONAME]' role='dimension' type='nominal' />
+            <column caption='Location T' datatype='string' name='[LOCATION_T]' role='dimension' type='nominal' />
+            <column caption='Objectid' datatype='integer' name='[OBJECTID]' role='measure' type='quantitative' />
+            <column caption='Provider' datatype='string' name='[PROVIDER]' role='dimension' type='nominal' />
+            <column-instance column='[OBJECTID]' derivation='Count' name='[cnt:OBJECTID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[BORONAME]' derivation='None' name='[none:BORONAME:nk]' pivot='key' type='nominal' />
+            <column-instance column='[LOCATION_T]' derivation='None' name='[none:LOCATION_T:nk]' pivot='key' type='nominal' />
+            <column-instance column='[PROVIDER]' derivation='None' name='[none:PROVIDER:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1agp3gk025p1ei1bqvp6s1b1m0qn].[none:BORONAME:nk]'>
+            <groupfilter function='level-members' level='[none:BORONAME:nk]' />
+          </filter>
+          <sort class='computed' column='[federated.1agp3gk025p1ei1bqvp6s1b1m0qn].[none:PROVIDER:nk]' direction='DESC' using='[federated.1agp3gk025p1ei1bqvp6s1b1m0qn].[cnt:OBJECTID:qk]' />
+          <slices>
+            <column>[federated.1agp3gk025p1ei1bqvp6s1b1m0qn].[none:BORONAME:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1agp3gk025p1ei1bqvp6s1b1m0qn].[cnt:OBJECTID:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1agp3gk025p1ei1bqvp6s1b1m0qn].[none:LOCATION_T:nk]' value='Location Type'>
+              <formatted-text>
+                <run>Location Type</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1agp3gk025p1ei1bqvp6s1b1m0qn].[none:LOCATION_T:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1agp3gk025p1ei1bqvp6s1b1m0qn].[cnt:OBJECTID:qk]</rows>
+        <cols>[federated.1agp3gk025p1ei1bqvp6s1b1m0qn].[none:PROVIDER:nk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Public WiFi Service By Location'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='NYC_Free_Public_WiFi_03292017' name='federated.1agp3gk025p1ei1bqvp6s1b1m0qn' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1agp3gk025p1ei1bqvp6s1b1m0qn'>
+        <column caption='Boroname' datatype='string' name='[BORONAME]' role='dimension' type='nominal' />
+        <column-instance column='[BORONAME]' derivation='None' name='[none:BORONAME:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='100000' id='5' param='horz' type='layout-flow' w='100000' x='0' y='0'>
+            <zone h='100000' id='3' type='layout-basic' w='84000' x='0' y='0'>
+              <zone h='100000' id='1' name='Public WiFi Service Providers by Location Type' w='84000' x='0' y='0' />
+            </zone>
+            <zone fixed-size='160' h='100000' id='4' is-fixed='true' param='vert' type='layout-flow' w='16000' x='84000' y='0'>
+              <zone h='7000' id='6' mode='checkdropdown' name='Public WiFi Service Providers by Location Type' param='[federated.1agp3gk025p1ei1bqvp6s1b1m0qn].[none:BORONAME:nk]' type='filter' w='16000' x='84000' y='0' />
+              <zone h='18250' id='7' name='Public WiFi Service Providers by Location Type' pane-specification-id='0' param='[federated.1agp3gk025p1ei1bqvp6s1b1m0qn].[none:LOCATION_T:nk]' type='color' w='16000' x='84000' y='7000' />
+            </zone>
+          </zone>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Public WiFi Service Providers by Location Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card mode='checkdropdown' param='[federated.1agp3gk025p1ei1bqvp6s1b1m0qn].[none:BORONAME:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1agp3gk025p1ei1bqvp6s1b1m0qn].[none:LOCATION_T:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1agp3gk025p1ei1bqvp6s1b1m0qn].[none:LOCATION_T:nk]</field>
+            <field>[federated.1agp3gk025p1ei1bqvp6s1b1m0qn].[none:PROVIDER:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='dashboard' maximized='true' name='Public WiFi Service By Location'>
+      <viewpoints>
+        <viewpoint name='Public WiFi Service Providers by Location Type'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.1agp3gk025p1ei1bqvp6s1b1m0qn].[none:LOCATION_T:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='1' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Public WiFi Service By Location' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAYeUlEQVR4nO3dWXAc9Z0H8G8fc4/mHkkjW7Il2TI+AMdAAtkiSVFJsZWlCAmQEAJbtVW7
+      L/uwr1u7mwdqK/uw73vVZmtTCeRwMGCWQDgcwDa+8IFsYwvZliyNNJY0mvvuex8GCYkZabpt
+      zUij/n2ewNM9/e9Rf/t/9L+7GU3TNBBiUux6F4CQ9UQBIKZGASCmRgEgprYYgOMfvIeDB3+H
+      N9/7YNkCRz488sV/Hz0CqZjEyPj0smWunD+FdEXB0bdfx/WpFD79+AQmJ8cxPZfDqwd/g4MH
+      D2J6Zg4Xh0cAAOdPH8WLL76EYyfPNizgpcuXVvyskp7Gf/38f/GrX72EbFle9Xtujl5GTlAB
+      APHrF3H5RqLhtj986wiUFT47d+ZMw/WrVFwbvQEAuPjJyvsCAB+9/w7+89//Da/+4R2d303u
+      FPfCCy+8AADnLo7g6ad+gHPnz0ORRHR3d+P0yVOIRm9g9OpnmM+LyOUS2D3Yj4mZLMYuncHJ
+      sxfQP7QHdjmDT8bTyMzHkExkMJeYx+6+TuRkB2YT8/jhk9+Hp8OJ6PgktvRuwQdvv4eHH/0u
+      7tm9ExdOvI9jp85CsXpx9tgfcfbTG0jOz2JryI1zVyYgCUVU0nG8deRD2JxOvPPmm7g4OoF7
+      994FIRODaO/F14f8OPbReZw6cxYSVLz39tsYvngFLl5GTnVi9JNzAAt0hCJ455XfYPjiJfh7
+      78KJd9/A8OXL6PZa8fvX3kaplMP77x9FsiBioG8Lrpw9iYufjWIslkB04hoGBgbxwbFj6N+2
+      DcPnz2LnXbtRTM3h1wdfwdXrk4j4eLx8+C0wnAtXh0/gw+MnoSgKXv7dIfh7eiHmc+DVIl55
+      4x1MROdQnJ/ARx9fwPWJW7hr5wD6+ndgfiaGxx9/DO+++x4GB7bhw6MncObEBxge/gTO4Fac
+      OvIHnD53Eb07d8Nh4db58Gl/izWAUsjg8Ouvo7NzC5LpeQBAan4Wbn8QTz/zLFKztwAAmlLB
+      XDqFZL6IHz/zI7itLELb9yA5fh68MwRNKYLlGIiFNFK5CuaiN3D48GuIp4qYjc0BAH74/E9w
+      9fxJ/O7Vt3Dm48vw+Ty4eXUY0+k8nn36CcRjszh+7CS2DQ5iNjGDy9fG8NyzPwabjiErWVGI
+      jaOoAACDMyc/wJ8ujOGenWGE+nbDr+TwlW89jq/eFUGlowcfnzqOqZlplHNzKORmoAX78di3
+      H0Y5fhM3E1lI5RyuT84g1LcbB/YOQpIVWLjPfxZLB558+mkwQgLdNuD4RydQFu3LfsALp0/i
+      8WeeQ49VwVvHL+H555/DvfsGIJUF8JUMFHsE9+9/APt378BsbBYnz36G557/CWS5jNmZAn7w
+      1FNgi4Xav0wpi5NHP4Czaztsfh+ee+5ZXDp9FJ8M34THIuLGjejaHw0mtBgAvsOPJ773PXz7
+      Ww8hn07i//7wBjIlBaV0Aq++/HuwdteyFYV8Fq+8ehh5UQUYHnM3RzB4z33gpRTs/u3VhRgg
+      0rcDTzzxfXQGnABT/eeP/vQeBFkDNAZ9W0OoCBK2DuxApDsMFsDX7t2GU2Nz6PbYAAAhjwuH
+      Dr2CPOzQhDxCvdthZQEwDL72Z4/gmR89DZeVQ2dXD7b0D+Cjt1/Dh+c+RV9nCEpyEp7InurO
+      Wj2YvHQe7x49AXugG05Og88fgt9lRWdXDxSJQTjsx8innzdV1CJef+1VZEoc7v76I3jt0O/x
+      rW/eDwBIJ2/h5Zdfhs0bwuGDh3BpKo6vbA/jN78/hEuXR3BjbAqaogAMh1sz1zF6IwowwGCP
+      F4deeQ3zyTQY5vOfhFvaFav+SI88+h0cPHwE9+/uxeT1a/jtiy+hd89X0B12AnYferr8a3gY
+      mBdT70KYpqqQFBVWCw8NGhRZAc/zX14Kct1/10ODLCngLdV1RVGC1WpZ9rmiaOCWHBiyLIPn
+      eSiKDIBd9tmXyZIIjeFg4TmoigKG5cB8Hj5FlqExDHiu+pkKgOe+aEqIogCet4JlGWja5/tu
+      4XF95CLOXYnhx099t2Z7oiiA4y3gWBayLIPjeCiyBIbjwLFstcwMC46tllmoVGCx2cAuFKqO
+      ix9/iOksi7/4zjdw+M1X8diffw88x0FTVciKCovldn538mV1A0BqaZoGZpUDtt23Z1YUAGJq
+      dB2AmBoFgJga9aTaioLf/vKXGNh7AH29vVAqWdjdXvD2Dty6NYWg04aJqTj8ATd6enogyzJ8
+      Pt96F3pDowC0mVQqg21CEm8dmUbAJkGR0pDcPRj0u3BpagaW3DyO5CtwWbx49LFHKQANUCe4
+      ragYH5/C9q0B3EoC02Nn4O8aQmZuAlv7tmPy5mdwecNIzMfh6+zDfffuXu8Cb3hrFgAatiPt
+      aM06waqqrtVXEdIyNApETI0CQEyNAkBMjQJATI0CQEyNAkBMbc2vBP/92280XObbO4bwnR27
+      1nrThBhGNQAxNQoAMTVdTSCxVMAnV8ewe7AHsdksOK0MkbFDFbJweToxONDX7HIS0hS6AmB1
+      uuGwsvD4w4jH8xAVHlYGYFweSEIJqqpCVVXonVakqipkefXn+BDSCroCUCnlIckiZmZmUCgX
+      EfA5ITN2qEIOXn8ILMtC0zRwnL7n1LAse5s30xOytnQdhXZnB+47cB8AIBKJLPlkSzPKREjL
+      UCeYmBoFgJgaBYCYGgWAmBoFgJgaBYCYGgWAmBoFgJia4cuxqqqCAaAxDKBpYFgW9DAU0q50
+      T4Y7fvYSejs7EE+V4LQzUBkHNCkPhyuIfftobj9pT7onw4X8bsgKi6DXAxkqWLBgnT6okkST
+      4Ujb0j0Zzm6zobu7C5l8GV4HB4mxQa3k4fTSZDjSvnRPhtu1q9rM8XqXPmzV24wyEdIyNApE
+      TI0CQEyNAkBMjQJATI0CQEyNAkBMjQJATI0CQEzN0OXY+EwMiWwJHjsLibVDqeTg8oQR6Q41
+      q3yENJWhAGQzGUxNzGLL9h5YGRUsxyGXTqKrM0BzgUhbMhSAru4u5EQFVk2CqHHVGqCD5gKR
+      9mXoKPT4Q7jPT80dsnlQJ5iYGgWAmBoFgJgaBYCYGgWAmBoFgJgaBYCYGgWAmBoFgJiaoSvB
+      0bEbmElk4euwQqK3RJJNwFAACsU8srkC3B2d9JZIsikYCkAw3AkZNnicCzUAvSWStDdjs0Ej
+      W9AVWfpmSHpLJGlv1AkmpkYBIKZGASCmRgEgpkYBIKZGASCmVhOARCKxHuUgZF3UBODUqVMU
+      AmIadZtAp06dwujoaM2/pxJxjF4bRyYZx3w6i7lb08gXK00vJCHNUnMl+KGHHlpxYX8wjGjs
+      FmKzZTBgwXAaEsksdu/dTXOBSFuqCYDdbse1a9cAAMFgEAzzxVuAxWIaTncYpfQ0JLb6mlSn
+      K0hzgUjbqjkKnU4nUqkU8vk87r77blgslsXPbO4AhtyApkagVV+XDYalgSTSvmoCUCqV0NXV
+      BUEQVjyjf/F2eHpHPGlvNadvl8uFfD4Pv98PRVHWo0yEtEzd9osoivD5fNROJ5teTQAYhkEw
+      GMT09LTuUR1C2lXdGqBSqSAej1MTiGx6NQGQJAk2mw0Wi4XG6smmVxMAVVUhSRI4jsPk5OR6
+      lImQlqnp5QqCgEuXLoHneezYsWM9ykRIy9QEwO12Y2BgADzP676yS0i7qglAKpUCz/PI5/OQ
+      JAlWq3Xxs3w6geh8Fl4r6C2RZFOoCUAoFIIgCLBYLMsOfgAYH5uACA6a0w4rS2+JJO2vJgDz
+      8/MYHx/H4OAgNE1bNhkusmUrNGiQNYBlGGhQwTIsTYYjbavmKAyHw4hGoxgeHkY4HF42Ga4z
+      0t3SwhHSbHVPw16vF8Vikc7SZNOreyXY6XRiaGiI2ulk06sJgKZpOH36NC5cuEA1ANn0ao5w
+      hmHgcrngdrtrOsGEbDZ1m0A+nw8jIyOtLgshLVc3AJ2dnXA6ndQHIJveijfERCIR6gOQTa9u
+      AEqlEkRRhKqqrS4PIS1Vc4pPJBLwer11O7/lYh7Tc0mEvU5IrA1qOQ+nN4QOl70lhSVkrdUE
+      IBgMYmRkBBaLpaYJFI1GAYsdsdl5ejAW2RTqDoM+/PDDdRcOBoP49Mp1eDqsUOjBWGQTMHQU
+      hjq78I1Q58IjsUAPxiLtzuBpmAHLLn0kFl0kI+2NTt/E1CgAxNQoAMTUKADE1CgAxNQoAMTU
+      KADE1CgAxNQMz0e4NnodThtLD8Yim4KhAIxfv4q5pICgzw6eHoxFNgFDAQiGupDJTQGqBBFc
+      tQboCNFkONK2DB2FXn8QB+4LNqsshLQcdYKJqVEAiKlRAIipUQCIqa37UEyhLOLmTKbhcv0R
+      H9wOa8PlCDFi3QNwcyaDn/7P+w2X+9lfP4K7BzpbUCJiJtQEIqZGASCmZrAJpEFVAQYaNIYB
+      tOpTIejWeNKuDAUgGZ/Dxxc+RXfYA4WpPhfI4Qpi375dzSofIU1lKAB2ux0Oux28zQUrWLBO
+      H1RJgqqqtz0ZTlUVnesoNIGOrDlDAZBlCX3b+xDosENibFAr1WeD3slkOJbVuw5HE+jImjM2
+      GS4Qhjew7F/WtjSEtFhbnlLLsZdQjv264XKBr/6xBaUh7YyGQYmpUQCIqa17E2irmMXf3Tqh
+      Y7n7ANBUCLK21j0ADlXCzkpS13KErLV1D0Cr/NPP38enN+OrLrOvvxP/8jePtKhEZCOgPgAx
+      NQoAMTVDTSChlEcsnkGgw0ZviSSbgqEASAqD+dkZlIousGv0lkhV0fcuYlVZOn9I3zpL5w79
+      IHEZj9y6seryvo4dkOVv6PpusjkYCsDU9SuA1QWpXIC8Rm+JlDl9rTCW+2IdSeeL+ZbOHdoq
+      5RBuMNpkkzppvpHJGPpr7z7wNQCApqr0lkiyKdzW6e6Lm2DoVhjS3uj0TUyNAkBMjQJATI0C
+      QEyNAkBMjQa9V1G5erXhMnw4DD4cbkFpSDOsewAqvIbxQOMnQ3h4Da2ecBH/5581XMb71JPw
+      PvVkC0pDmmHdA3DLo+G/HxQaLvdTjwZfC8pDzMVQAHLpecRms+C0MkTGDlXIwuXpxOBAX7PK
+      R0hTGQqAxx9GPJ6HqPCwMgDj8kASSi1/MNbtTIbTUzZN0ww/fGvpvpSPf4TS8eMN1wn+4z8Y
+      2gZpHkMByKYSKJSLCPickBk7VCEHr7/1D8a6nclwDNN42gbDMIYnwy3dFzWZhHB1xFC5lPhn
+      0IT86uWydYDrvMtQuYg+Bh+MFcL+wNKXYm9Z4+KYj3D0X6FMn111GW7rA3A+/YsWlchc6DoA
+      MbV1HwUixslTq9cYAMCFd4Gxe1pQmvZGAWhD5UN/1XAZx1O/AN/7AIBqYBo1swDA9tDf3nHZ
+      2g0FwASU6bMQT/9Hw+XMGADqAxBToxqA1FU4ehTKfGLVZbhwCO5vfrNFJWqOOwrA3K1peizK
+      JlU8eqzhNQ3bnt2LARAnJpD+1YsNv9f/l8/Dun07gOpkQz3XTZbOtVrrYN5RAFK5HBLJLPbe
+      vfdOvoZsAmqppOtgVkulxf8Wro4ge+iVhussDYDRYDZyRwHIZ9NwuoJ38hWENN1qIbujANz/
+      wEP0WBSy4a0WAEbTO4NtFaqqQlEUsHXCoGnaivNwVFU1tM5Ky9/OOmtZrttZZy33ZSUb9fda
+      632/k31Zk1GghY3U29jMzAwKhQJ27txZ8xnDMDXrLMz0rPdZvX8DqjskiiIYhoHVatW1DgAI
+      ggCWZWGxWHStI0kSRFGE0+nUtS+5XA7pdBrBYBBut1t3uTRNgyRJhvfFZrPpXl7vOpIkQZKk
+      xX2WZRnlchkdHR0Nt1OpVKBpGhwOh+5yqaqKSqVS8xuvtg27vf4gjJ6/45q1X1baIY7jVpxi
+      vFJgLly4gMnJSd3byGQyuH79Oubm5nSvc+7cOYyOjtad/bnSOjdu3EA8Xv8dA/XWsVgsUJT6
+      071X2sbU1BSi0Siy2ayudQRBQDQaRTQa1b2NeDyOaDSq6/eamJhAaUnHdXp6GqOjoxBFseF2
+      zp8/j+npad3lunr1Ks6fP18TykbrTE1NQZJqX6BSbx1VVTE2Nra4T01vwGcyGQiCUPeHqMdi
+      scDhcBialmy1WhEKhVY8E9Szb9++VcNZz0oH82rlKhQKiMViuu+VEEURHo8HYZ33GUuSBI7j
+      6tawq23DarWir6/xjUw8zyOdTi/+v8fjQU9Pj66mWHd3d03Nt5qhoSGEw2EUi0Xd6/T394Pn
+      ed33iIiiCIvFgny+OgW9qQEol8tQVRUcxyEY1DdaxHHVef9frv5Xw/M8isWi7tBomobJyUnY
+      7fZlf9xGOjs7dd1XsGBmZgYWiwVdXV261xEEAbFYrO4ZrZ5KpYJSqYREYvWx8S9vI5FILB4E
+      q2FZtib4oijqCkA2m9W9H0C1yZjJZHTfV6JpGi5evIhoNKprXwDAbrfD5XIt/h2bGgCbzbZ4
+      Rv9yO3AlwWAQu3btWlbtNlIul1GpVFAoFHQtzzDMYvtfbzCBavs3mWz8PrMFXV1di6HRGxyX
+      ywWvV/8LyO12OywWC+LxuO5axmKxwGKxoFwuN1zW7XYvK3smk6npM63E6/UaqjUX+hp612EY
+      Bvv378fevXsN/R0FQUAqlQLQ5AAIgoCOjg7d1RMAJBIJXLlypW5HcyWVSgWVSgUej/7pv/fc
+      cw+6urp0nzlLpRJkWUZ3d7fubaRSKUSjUd1nNKB6VguFQrprM0mSwDAMnE6n7pDJsgxZlnUd
+      aMVicdn32u12RKPRhmErl8uQJMlQE0gQBOzcudNQrTw+Po50Oq27KVssFuHz+dDZWX3jaFPn
+      AjkcDuRyOQwNDelep1QqGW4C+f1+CELjJ0ssNTY2Bo7jEIlEdC3vdDprRj8acTgcCAQCKBQK
+      ug8EjuMwPDyM/fv366o1/X4//H6/7jIBwMDAgO5lWZZd1inVNA08z0NRlFWDzTAMNE0zNGzL
+      8zympqbQ09Oje52uri7dzR8AX5z5F0Yuda95m0qlEi5fvqx7eavVaqgJAFQ7p4VCwVB7s1Ao
+      IJVKLf4gerjdbkNtbafTiWw2q7v5BwCxWAxbtmzZEC/qSKfT4DhuccRHlmXY7XZ0dXU1LJ/d
+      bkc+nzd0cPI8j0wmg0qlonsdvTXZgu7ubmzduhVbtlRv523qr1wulxd/RL0KhQJsNpuhnVp4
+      IoXeUSBN09Db2wuXy2UoNG63u+7w5Ery+TwikQgymYzuUD/44IO6v7/ZOI5bHGUCqr9zuVzW
+      fVYPBAKGmqXFYhGBQEB3XwYAtm3bpntZoNr/SSaTmJ6eRn9/f3NrAIfDgW3btiESiejeKY/H
+      g97eXkOjLQDg8xl7bFYikUAsFtO9HUEQMDExYah2cjgcKBQKhqr0jcTj8RgawFgqnU4belQO
+      UG3OKYrS9NqvXC5jYGAAVqu1+U0gTdNQLpd1Nx04jkM0GjXUpl8YzdDbEVroNFosFkN9Db2j
+      HwsWmg9G+ycbSSaTWXYQS5Kkq9lYKBQwNDRkaDSvVCqBZVlDgyZGKYqCbDaLZDIJu93e3CaQ
+      oiiIxWKw2Wy6qypFUeBwOAydOTKZDEqlku6LR0D1xw4EArprAJvNhj179uj+fqB6FXXhgDEy
+      GrKRuFwupFIp9PT0wGKxwG636zrRhEIhRKNRQzVmK2rKSqWC7u7uxWA2NQCiKCISiRh+2loy
+      mTQ02uL1esFxHHK5nO4QOJ1OQ0Ott8PlcoHjOEP7stE4nc7FYUmGYXSPmjkcDl1Xmlstn8/D
+      5/O15kpwsVhEKBQy1HSoVCpgWXaxl65HIBBAf3+/4X7A/Pw85ufnDa1jRDAYBM/zhptOG4Wi
+      KJiYmDA0iLHRdXd3I51OLx4rTQ1AR0cHotGoriuOCxwOBxiGwdTUlO51YrEYJicnDV1ACYfD
+      UBQFoVCo8cK3SRAEw7XfRsKyLMLhsKGRnHYQiURaE4CFtr+RtvlCDWCkI7RwpjXSpLly5Yqh
+      +UO3w+l0gud5Q+PaG4mmachkMoZOLO2mJVdbjHRoF87MRqpdSZJQKpWgaZruzuaBAwcgSRJk
+      WW5aE0VVVaRSqbbtA7AsC7/fj4mJifUuStM0tQZIJpPQNM3QUNjCbD0jU5tdLhdkWTY80rIw
+      KaxZWJaFLMt157e3k/7+/vUuQtM0NQAulwvRaNTQ/O7bUS6XF2eebiT5fB79/f0r3kSz0ZVK
+      JWSzWUM1eLtpagAYhoEkSU2/smez2SCKoqGaphWsVitUVTU8t2mjcDqdi4MSm1VTA6BpGlwu
+      l6EhzdshyzJ8Pt+GO1PlcrmmDrO2gs1ma+qV2fXW9Bogl8vh7NnGTya+EyzLIplMwuVyNXU7
+      RtlsNsP9mY2mUChgdHR0vYvRNE0NwMI8mGbXAMlkEn19fYbm9bSCy+UydLPGRlOpVMDzvKG7
+      rdrN/wP/z5bfJE56HQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Public WiFi Service Providers by Location Type' width='192'>
+      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
+      QmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
